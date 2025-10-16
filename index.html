@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio Creativo 🌸</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- Navegación Principal -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">✨ Mi Sitio</div>
+      <ul class="nav-menu">
+        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+        <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+        <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+      <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+    </div>
+  </nav>
+
+  <!-- Sección Hero -->
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">👋 Hola, soy</div>
+      <h1 class="hero-title">
+        <span class="gradient-text">Diseñadora</span> Creativa
+      </h1>
+      <p class="hero-subtitle">
+        Creando experiencias digitales hermosas y funcionales
+      </p>
+      <div class="hero-buttons">
+        <button class="btn btn-primary" onclick="scrollToSection('proyectos')">
+          Ver Proyectos
+        </button>
+        <button class="btn btn-secondary" onclick="scrollToSection('contacto')">
+          Contáctame
+        </button>
+      </div>
+    </div>
+    <div class="hero-decoration">
+      <div class="floating-card card-1">🎨</div>
+      <div class="floating-card card-2">✨</div>
+      <div class="floating-card card-3">💖</div>
+      <div class="floating-card card-4">🌸</div>
+    </div>
+  </section>
+
+  <!-- Sección Sobre Mí -->
+  <section id="sobre-mi" class="about">
+    <div class="container">
+      <h2 class="section-title">Sobre Mí</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p class="highlight">Apasionada por el diseño y la tecnología</p>
+          <p>
+            Soy una diseñadora web que ama crear experiencias digitales 
+            únicas y memorables. Me especializo en combinar estética 
+            moderna con funcionalidad intuitiva.
+          </p>
+          <div class="skills">
+            <div class="skill-item">
+              <span class="skill-icon">💻</span>
+              <span>Desarrollo Web</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-icon">🎨</span>
+              <span>Diseño UI/UX</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-icon">📱</span>
+              <span>Responsive Design</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-icon">✨</span>
+              <span>Animaciones</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-number" id="projects-count">0</div>
+            <div class="stat-label">Proyectos</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="clients-count">0</div>
+            <div class="stat-label">Clientes</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="awards-count">0</div>
+            <div class="stat-label">Premios</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Proyectos -->
+  <section id="proyectos" class="projects">
+    <div class="container">
+      <h2 class="section-title">Mis Proyectos</h2>
+      <p class="section-subtitle">Explora algunos de mis trabajos recientes</p>
+      
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-overlay">
+              <button class="btn-icon" onclick="showProjectInfo('E-commerce')">
+                Ver Más
+              </button>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>E-commerce Moderno</h3>
+            <p>Tienda online con diseño minimalista y experiencia de usuario optimizada</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image project-image-2">
+            <div class="project-overlay">
+              <button class="btn-icon" onclick="showProjectInfo('Portafolio')">
+                Ver Más
+              </button>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Portafolio Creativo</h3>
+            <p>Sitio personal con animaciones elegantes y diseño único</p>
+            <div class="project-tags">
+              <span class="tag">Design</span>
+              <span class="tag">Animation</span>
+              <span class="tag">React</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image project-image-3">
+            <div class="project-overlay">
+              <button class="btn-icon" onclick="showProjectInfo('Dashboard')">
+                Ver Más
+              </button>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Dashboard Analítico</h3>
+            <p>Panel de control con visualización de datos en tiempo real</p>
+            <div class="project-tags">
+              <span class="tag">UI/UX</span>
+              <span class="tag">Data Viz</span>
+              <span class="tag">Charts</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image project-image-4">
+            <div class="project-overlay">
+              <button class="btn-icon" onclick="showProjectInfo('App Móvil')">
+                Ver Más
+              </button>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>App de Bienestar</h3>
+            <p>Aplicación móvil para meditación y mindfulness</p>
+            <div class="project-tags">
+              <span class="tag">Mobile</span>
+              <span class="tag">Wellness</span>
+              <span class="tag">iOS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Contacto -->
+  <section id="contacto" class="contact">
+    <div class="container">
+      <h2 class="section-title">¿Hablamos?</h2>
+      <p class="section-subtitle">Cuéntame sobre tu proyecto y trabajemos juntos</p>
+      
+      <div class="contact-content">
+        <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary btn-full">
+            Enviar Mensaje 💌
+          </button>
+        </form>
+
+        <div class="contact-info">
+          <div class="info-card">
+            <div class="info-icon">📧</div>
+            <h3>Email</h3>
+            <p>hola@miportafolio.com</p>
+          </div>
+          
+          <div class="info-card">
+            <div class="info-icon">📱</div>
+            <h3>Teléfono</h3>
+            <p>+52 123 456 7890</p>
+          </div>
+          
+          <div class="info-card">
+            <div class="info-icon">📍</div>
+            <h3>Ubicación</h3>
+            <p>Ciudad de México, MX</p>
+          </div>
+
+          <div class="social-links">
+            <a href="#" class="social-link">🔗 LinkedIn</a>
+            <a href="#" class="social-link">💼 GitHub</a>
+            <a href="#" class="social-link">📸 Instagram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>✨ Hecho con 💖 y mucha creatividad</p>
+      <p>© 2024 Mi Portafolio. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Notificación Toast -->
+  <div class="toast" id="toast">
+    <span id="toast-message"></span>
+  </div>
+
+  <!-- Botón Scroll to Top -->
+  <button class="scroll-top" id="scrollTop" onclick="scrollToTop()">
+    ↑
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
